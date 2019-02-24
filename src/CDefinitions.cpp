@@ -63,7 +63,7 @@ void CDefinitions::LoadDefinitions() {
     std::string mapSequence = "";
 
     std::ifstream defFile;
-    defFile.open("examples/definitions.cnf", std::ios_base::in);
+    defFile.open("data/definitions.cnf", std::ios_base::in);
 
     if (!defFile.good()) {
         defFile.close();
