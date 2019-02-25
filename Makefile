@@ -1,6 +1,7 @@
 CXXFLAGS=-std=c++11 -c -Wall -pedantic -Wno-long-long -O0 -ggdb -lncurses
 OBJECTS=CDefinitions.o CEnemy.o CGame.o CGameEntity.o CGameGraphics.o CGfx.o CTower.o main.o 
 NAME=build
+.DEFAULT_GOAL := compile
 
 doc: ./Doxyfile
 	doxygen ./Doxyfile

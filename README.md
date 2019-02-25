@@ -1,7 +1,7 @@
 # fiTD 1.0
-A basic console-based tower defense game engine.
+*A basic console-based tower defense game engine.*
 
-Created by Jan Vorisek as the final BI-PA2 seminar assigment at FIT CTU in 2018.
+*Created by **Jan Vorisek** as the final BI-PA2 seminar assigment at **FIT CTU** in 2018.*
 
 ![](https://raw.githubusercontent.com/Blokatt/fiTD/master/preview.gif?token=ALoJEeTcusEc2DVtXoxZy1Eyehgz4Ad8ks5cdFqRwA%3D%3D)
 
@@ -13,42 +13,42 @@ Features:
 - Tutorial
 - Per-map game saving/loading
 
-Building (Linux)
+Building
 ---
 Dependencies:
 - ncurses
 - Doxygen (documentation)
 
 
-Compile:
+**Compile (./build/):**
 
 `
 make
 `
-or
+*or*
 `
 make compile
 `
 
-Generate documentation:
+**Generate documentation (./doc/):**
 
 `
 make doc
 `
 
-Compile and generate documentation:
+**Compile and generate documentation:**
 
 `
 make all
 `
 
-Run game:
+**Run game:**
 
 `
 make run
 `
 
-Clean all (documentation, binary, object files)
+**Clean all (documentation, binary, object files)**
 
 `
 make clean
