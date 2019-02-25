@@ -3,7 +3,7 @@
 
 *Created by **Jan Vorisek** as the final BI-PA2 seminar assigment at **FIT CTU** in 2018.*
 
-![](https://raw.githubusercontent.com/Blokatt/fiTD/master/preview.gif?token=ALoJEeTcusEc2DVtXoxZy1Eyehgz4Ad8ks5cdFqRwA%3D%3D)
+![](preview.gif)
 
 Features:
 ---
