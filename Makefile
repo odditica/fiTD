@@ -57,7 +57,7 @@ run :	towerdefense
 .PHONY : compile
 compile : 
 	-mkdir $(NAME)
-	-cp -R ./examples ./$(NAME)/examples
+	-cp -R ./data ./$(NAME)/data
 	-make towerdefense 
 	 
 .PHONY : all
