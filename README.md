@@ -1,4 +1,4 @@
-# fiTD 1.0
+# fiTD 1.0 [![Build Status](https://travis-ci.org/Blokatt/fiTD.svg?branch=master)](https://travis-ci.org/Blokatt/fiTD)
 *A basic console-based tower defense game engine.*
 
 *Created by **Jan Vorisek** as the final BI-PA2 seminar assigment at **FIT CTU** in 2018.*
