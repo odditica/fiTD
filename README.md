@@ -18,6 +18,7 @@ Building
 Dependencies:
 - ncurses
 - Doxygen (documentation)
+- catch2 (tests)
 
 
 **Compile (./build/):**
