@@ -1,0 +1,61 @@
+@GAME
+	SCORE 462
+	MONEY 180.801
+	SPNTIME 14
+	SEQINDEX 8
+	FLED 0
+	KILLED 4
+-
+@TOWER
+	X 20
+	Y 1
+	HP 38.9
+	TIME 8
+	ID 5
+-
+@TOWER
+	X 21
+	Y 1
+	HP 8.50002
+	TIME 14
+	ID 5
+-
+@ENEMY
+	X 22
+	Y 2
+	HP 2
+	TIME 6
+	ID 0
+	DIR 8
+-
+@TOWER
+	X 22
+	Y 3
+	HP 169.4
+	TIME 10
+	ID 3
+-
+@ENEMY
+	X 28
+	Y 1
+	HP 5
+	TIME 8
+	ID 0
+	DIR 8
+-
+@ENEMY
+	X 30
+	Y 3
+	HP 10
+	TIME 4
+	ID 1
+	DIR 6
+-
+@ENEMY
+	X 28
+	Y 8
+	HP 5
+	TIME 4
+	ID 0
+	DIR 8
+-
