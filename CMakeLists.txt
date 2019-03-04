@@ -2,24 +2,19 @@ project(fitd)
 
 cmake_minimum_required(VERSION 3.5)
 
-set(CMAKE_CXX_COMPILER g++)
-set(CMAKE_CXX_FLAGS "-Wall -lncurses")
+set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES doc)
 
 add_custom_target(
 	doc ALL
 	COMMAND doxygen ./Doxyfile
 )
+set_target_properties(doc PROPERTIES EXCLUDE_FROM_ALL TRUE)
+file(COPY data DESTINATION build)
+file(COPY data DESTINATION test)
 
-set_directory_properties(PROPERTIES ADDITIONAL_MAKE_CLEAN_FILES doc)
+enable_testing()
 
-find_package(Curses REQUIRED)
-include_directories(
-	src
-	${CURSES_INCLUDE_DIR})
-
-file(GLOB SOURCES "src/*.cpp")
-
-add_executable(${PROJECT_NAME} ${SOURCES})
-
-target_link_libraries(${PROJECT_NAME} ${CURSES_LIBRARIES})
+include_directories(src)
+add_subdirectory(src build)
+add_subdirectory(test)
 

@@ -1,8 +1,13 @@
+dist: trusty
+sudo: require
 language: cpp
 before_install:
   - sudo apt-get install libncurses5-dev libncursesw5-dev
   - sudo apt-get install doxygen
+  - sudo apt-get install cmake
+  - sudo apt-get install catch
 
 compiler: gcc
 script:
-  - make all  
+  -cmake .
+  -make test  
