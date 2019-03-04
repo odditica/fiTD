@@ -1,7 +1,7 @@
 # fiTD 1.0 [![Build Status](https://travis-ci.org/Blokatt/fiTD.svg?branch=master)](https://travis-ci.org/Blokatt/fiTD)
 *A basic console-based tower defense game engine.*
 
-*Created by **Jan Vorisek** as the final BI-PA2 seminar assigment at **FIT CTU** in 2018.*
+*Originally created by **Jan Vorisek** as the final BI-PA2 seminar assigment at **FIT CTU** in 2018.*
 
 ![](preview.gif)
 
@@ -18,38 +18,25 @@ Building
 Dependencies:
 - ncurses
 - Doxygen (documentation)
-- catch2 (tests)
+- cmake
+- Catch2 (tests)
 
 
 **Compile (./build/):**
 
-`
+```
+cmake .
 make
-`
-*or*
-`
-make compile
-`
+```
 
 **Generate documentation (./doc/):**
 
-`
+```
+cmake .
 make doc
-`
+```
 
-**Compile and generate documentation:**
-
-`
-make all
-`
-
-**Run game:**
-
-`
-make run
-`
-
-**Clean all (documentation, binary, object files)**
+**Clean all**
 
 `
 make clean
