@@ -10,6 +10,8 @@ before_install:
   - cd Catch2
   - cmake -Bbuild -H. -DBUILD_TESTING=OFF
   - sudo cmake --build build/ --target install 
+  - cd ..
+  - rm -rf Catch2
 
 compiler: gcc
 script:
