@@ -1,10 +1,5 @@
 project(TEST)
 
-add_test(
-  NAME ${PROJECT_NAME}
-  COMMAND test
-)
-
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 find_package(Catch2 REQUIRED)
