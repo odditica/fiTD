@@ -14,4 +14,5 @@ before_install:
 compiler: gcc
 script:
   - cmake .
+  - make
   - make test  
