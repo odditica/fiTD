@@ -2,19 +2,22 @@ dist: trusty
 sudo: require
 language: cpp
 before_install:
+  - mkdir tmp
+  - cd tmp
   - sudo apt-get install libncurses5-dev libncursesw5-dev
   - sudo apt-get install doxygen
   - sudo apt-get install cmake
-  - sudo apt-get install catch
+  - sudo apt-get install catch  
   - git clone https://github.com/catchorg/Catch2.git
   - cd Catch2
   - cmake -Bbuild -H. -DBUILD_TESTING=OFF
   - sudo cmake --build build/ --target install 
   - cd ..
-  - rm -rf Catch2
+  - cd ..
+  - rm -rf tmp
+  - cmake .
 
 compiler: gcc
 script:
-  - cmake .
   - make
   - make test  
