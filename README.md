@@ -52,8 +52,7 @@ make test
 Running the game
 ---
 
-`
+```
 cd build
-
 ./fitd
-`
+```
