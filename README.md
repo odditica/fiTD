@@ -49,10 +49,11 @@ Running tests
 make test
 `
 
-Running game
+Running the game
 ---
 
 `
 cd build
+
 ./fitd
 `
