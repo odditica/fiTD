@@ -5,8 +5,8 @@ include_directories(${CURSES_INCLUDE_DIR})
 find_package(Catch2 REQUIRED)
 
 add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} fitd-main)
 target_link_libraries(${PROJECT_NAME} ${CURSES_LIBRARIES})
-target_link_libraries(${PROJECT_NAME} dependencies)
 target_link_libraries(${PROJECT_NAME} Catch2::Catch2)
 
 include(CTest)

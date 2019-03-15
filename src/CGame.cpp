@@ -27,10 +27,9 @@ mEnemySequenceIndex(0), mEnemiesKilled(0), mEnemiesFled(0), mScore(0), mKillGoal
             LoadGame();
         }        
     } catch (const LoadException & m) {
-        // Show an error message if something fails
-        CGameGraphics::ThrowError(m.mErrorMessage);
-        mQuit = true;
-        return;
+        mQuit = true;        
+        Destroy();
+        throw m;
     }
 
     //Graphics setup

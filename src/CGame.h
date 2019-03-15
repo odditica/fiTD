@@ -109,6 +109,11 @@ public:
      */
     bool FindPathToExit(unsigned int x, unsigned int y, CEnemy* enemy = 0);
 
+    /**
+     * @brief Quits the current game, if the player hasn't lost/won yet, we save it
+     */
+    void Quit();
+
 private:
     static const int MAP_SPAWN_DELAY = 50;
     static const int MAP_MAX_HEIGHT = 23;
@@ -144,12 +149,7 @@ private:
      * @param save Whether or not we should look for a save file and load it
      */
     void LoadMap(const CDefinitions::MapDefinition & map, bool save);
-
-    /**
-     * @brief Quits the current game, if the player hasn't lost/won yet, we save it
-     */
-    void Quit();
-
+    
     /**
      * @brief Game input processing.
      */

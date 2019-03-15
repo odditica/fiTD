@@ -10,7 +10,6 @@ add_custom_target(
 )
 set_target_properties(doc PROPERTIES EXCLUDE_FROM_ALL TRUE)
 file(COPY data DESTINATION build)
-file(COPY data DESTINATION test)
 
 enable_testing()
 

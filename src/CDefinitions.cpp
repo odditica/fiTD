@@ -4,6 +4,7 @@
 #include <sstream>
 #include <fstream>
 #include <string>
+#include <algorithm>
 
 void CDefinitions::AddTowerDefinition(int id, int price, int width, int height, int health, int radius, int frequency, int damage, int colour, char symbol) {
     mTowerDefinitions.insert(std::make_pair(id, TowerDefinition(id, price, width, height, health, radius, frequency, damage, colour, symbol)));
@@ -84,6 +85,10 @@ void CDefinitions::LoadDefinitions() {
         //Read line by line
         std::string line;
         while (getline(defFile, line)) {
+            
+            //Remove newline
+            line.erase(std::remove(line.begin(), line.end(), '\n'), line.end());
+            line.erase(std::remove(line.begin(), line.end(), '\r'), line.end());
 
             //Section end handling
             if (loadState != EDEF_LOAD_STATE::NONE) {
@@ -310,6 +315,11 @@ void CDefinitions::LoadDefinitions() {
                                 defFile.close();
                                 throw (LoadException("Unexpected end of file."));
                             }
+
+                            //Remove newline
+                            line.erase(std::remove(line.begin(), line.end(), '\n'), line.end());
+                            line.erase(std::remove(line.begin(), line.end(), '\r'), line.end());
+                            
                             mapTiles.push_back(line);
                         }
                     }

@@ -69,8 +69,16 @@ void ProcessMenuSelection(){
         break;
         case CMainMenu::EMENU_ITEM::START:            
             //Start a normal game
-            gamePtr = CGame::GetInstance(CMainMenu::selectedMap);  
+
+            try {
+                gamePtr = CGame::GetInstance(CMainMenu::selectedMap);  
+            } catch  (const char* msg) {
+                // Show an error message if something fails
+                CGameGraphics::ThrowError(static_cast<std::string>(msg));
+                break;
+            }
             SetProgramState(EPROGRAM_STATE::PLAYING);                      
+            
         break;
         case CMainMenu::EMENU_ITEM::LOAD:            
             //Start a game from a save file

@@ -61,9 +61,11 @@ void CGameGraphics::ThrowError(const std::string & str) {
     attroff(COLOR_PAIR(ECOLORS::RED));
     refresh();
 
+    #ifndef NDEBUG
     //Wait for any key
     while (getch() == -1) {
     }
+    #endif
 }
 
 void CGameGraphics::Maximise() {

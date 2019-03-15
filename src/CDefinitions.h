@@ -19,14 +19,9 @@ public:
      * @class TowerDefinition
      * @brief Stores tower definition data, used as a template when creating tower entities.
      */
-    class TowerDefinition {
-    private:
-        friend class CGame;
-        friend class CGameGraphics;
+    struct TowerDefinition {
         int mId, mPrice, mWidth, mHeight, mHealth, mRadius, mFrequency, mDamage, mColour;
         char mSymbol;
-    public:
-
         TowerDefinition(int id, int price, int width, int height, int health, int radius, int frequency, int damage, int colour, char symbol) :
         mId(id), mPrice(price), mWidth(width), mHeight(height), mHealth(health), mRadius(radius), mFrequency(frequency), mDamage(damage), mColour(colour), mSymbol(symbol) {
         }
@@ -36,14 +31,10 @@ public:
      * @class EnemyDefinition
      * @brief Stores enemy definition data, used as a template when creating enemy entities.
      */
-    class EnemyDefinition {
-    private:
-        friend class CGame;
-        friend class CGameGraphics;
+    struct EnemyDefinition {
+
         int mId, mHealth, mSpeed, mResist, mWStyle, mAttack, mColour;
         char mSymbol;
-    public:
-
         EnemyDefinition(int id, int health, int speed, int resist, int wStyle, int attack, int colour, char symbol) :
         mId(id), mHealth(health), mSpeed(speed), mResist(resist), mWStyle(wStyle), mAttack(attack), mColour(colour), mSymbol(symbol) {
         }
@@ -53,14 +44,10 @@ public:
      * @class MapDefinition
      * @brief Stores map definition data, used as a template when generating maps.
      */
-    class MapDefinition {
-    private:
-        friend class CGame;
+    struct MapDefinition {
         unsigned int mId, mKillGoal;
         std::string mSequence;
         std::vector<std::string> mTiles;
-    public:
-
         MapDefinition(int id, int killGoal, const std::string & sequence, const std::vector<std::string> & tiles) :
         mId(id), mKillGoal(killGoal), mSequence(sequence), mTiles(tiles) {
         }
