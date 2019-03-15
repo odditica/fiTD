@@ -18,8 +18,8 @@ Building
 Dependencies:
 - ncurses
 - Doxygen (documentation)
-- cmake
-- Catch2 (tests)
+- CMake
+- Catch2 (including CMake scripts)
 
 
 **Compile (./build/):**
@@ -40,4 +40,19 @@ make doc
 
 `
 make clean
+`
+
+Running tests
+---
+
+`
+make test
+`
+
+Running game
+---
+
+`
+cd build
+./fitd
 `
