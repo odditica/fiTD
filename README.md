@@ -16,11 +16,10 @@ Features:
 Building
 ---
 Dependencies:
+- CMake
+- Catch2 (including CMake scripts, more info [here](https://github.com/catchorg/Catch2/blob/master/docs/cmake-integration.md#installing-catch2-from-git-repository))
 - ncurses
 - Doxygen (documentation)
-- CMake
-- Catch2 (including CMake scripts)
-
 
 **Compile (./build/):**
 
