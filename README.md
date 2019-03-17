@@ -13,6 +13,12 @@ Features:
 - Tutorial
 - Per-map game saving/loading
 
+Planned:
+---
+- More game content + gameplay fine-tuning
+- Sound
+- Level editor
+
 Building
 ---
 Dependencies:
