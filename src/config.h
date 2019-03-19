@@ -1,0 +1,4 @@
+#define PROJECT_VER_MAJOR "1"
+#define PROJECT_VER_MINOR "0"
+#define PROJECT_VER_PATCH "1"
+#define PROJECT_BUILD_DATE "19/03/19"

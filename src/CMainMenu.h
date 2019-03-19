@@ -8,7 +8,7 @@
 
 #include "CGfx.h"
 #include <fstream>
-
+#include "config.h"
 static const int MENU_ITEMS = 4;
 
 class CMainMenu {
@@ -175,8 +175,9 @@ public:
         //Transition
         fade *= .75;
         if (fade <= .005) fade = 0;
-
-        CGfx::PrintFormatted(winMenuTopBar, 1, 2 + COLS * fade, "\\Ufi\\^U\\BTD\\^B by Jan Vorisek, June 2018");
+        std::stringstream titleStream;
+        titleStream <<  "\\Ufi\\^U\\BTD\\^B by Jan Vorisek | Version \\B" << PROJECT_VER_MAJOR << "." << PROJECT_VER_MINOR << "." << PROJECT_VER_PATCH << "\\^B | Built on \\B" << PROJECT_BUILD_DATE << "\\^B";
+        CGfx::PrintFormatted(winMenuTopBar, 1, 2 + COLS * fade, titleStream.str());
         CGfx::PrintFormatted(winMenuBottomBar, 1, 2, "\\BArrow Keys\\^B - Navigation / Map selection | \\BEnter\\^B - Select");
 
         // Render menu items

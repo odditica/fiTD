@@ -1,6 +1,7 @@
 /*
- * fiTD by Jan Vorisek
- * 04/06/2018
+ * fiTD by Jan Vorisek, version 1.0.1
+ * @blokatt | blokatt.net
+ * 19/03/19
  */
 
 #include <ncurses.h>
