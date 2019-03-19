@@ -1,4 +1,4 @@
-# fiTD 1.0 [![Build Status](https://travis-ci.org/Blokatt/fiTD.svg?branch=master)](https://travis-ci.org/Blokatt/fiTD)
+# fiTD 1.0.1 [![Build Status](https://travis-ci.org/Blokatt/fiTD.svg?branch=master)](https://travis-ci.org/Blokatt/fiTD)
 *A basic console-based tower defense game engine.*
 
 *Originally created by **Jan Vorisek** as the final BI-PA2 seminar assigment at **FIT CTU** in 2018.*
@@ -13,14 +13,19 @@ Features:
 - Tutorial
 - Per-map game saving/loading
 
+Planned:
+---
+- More game content + gameplay fine-tuning
+- Sound
+- Level editor
+
 Building
 ---
 Dependencies:
+- CMake
+- Catch2 (including CMake scripts, more info [here](https://github.com/catchorg/Catch2/blob/master/docs/cmake-integration.md#installing-catch2-from-git-repository))
 - ncurses
 - Doxygen (documentation)
-- CMake
-- Catch2 (including CMake scripts)
-
 
 **Compile (./build/):**
 
